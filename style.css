@@ -1,0 +1,106 @@
+/*  "* is the universal selector, I am writing this for all my project " */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #eef0fe;
+    display: grid;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-items: center; 
+    min-height: 100vh;
+}
+
+.container{
+    background-color: #eef0fe;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    line-height: 2;
+    box-shadow: 1px 20px 30px rgba(0,0,0,0.185);
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #ff9ec4, #7effbe);
+    width:900px;
+    height:900px;
+    z-index: -1;
+    border-radius: 50%;
+}
+.container-close{
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    background-color: #fff;
+    height: 50px;
+    width:50px;
+    display: grid;
+    place-items: center;
+    font-size: larger;
+    color: #2a4052;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px black;
+    cursor: pointer;
+}
+
+img{
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.container-text{
+    padding: 10px 10px 10px 10px;
+}
+
+h2{
+    font-size: larger;
+    color: #2a4052;
+
+}
+p{
+    font-size: 15px;
+    color: #3b4163;
+}
+input, button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+}
+input{
+    border: 2px solid #daddec;
+    margin: 5px 0 10px;
+    font-size: small;
+    color: #2a4052;
+}
+
+button{
+    background-image: linear-gradient(to bottom right, #ff9ec4, #ffc37e);
+    display: block;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0 3px 5px black;
+    margin-bottom: 5px;
+
+}
+
+span{
+    display: block;
+    text-align: center;
+    color:rgb(80, 64, 48);
+    font-size: 14px;
+    margin: 20px 0 0;
+}
